@@ -30,13 +30,13 @@ export const LandingPage = () => {
                     <div className="hero-color-fill"/>
                 </div>
 
-                <div className="hero-container">
-                    <h1 className="h1-hero-title">Build hybrid smart contracts with Chainlink</h1>
+                <div className="container hero-container">
+                    <div className="h1-hero-title">
+                        <h1>Securely connect smart contracts with off-chain data and services</h1>
+                    </div>
 
-                    <p className="hero-subtext">Chainlink gives blockchain developers an easy-to-use framework for
-                        writing hybrid smart
-                        contracts that connect to external resources by combining on-chain and off-chain
-                        computation.</p>
+                    <p className="hero-subtext">Chainlink decentralized oracle networks provide tamper-proof inputs,
+                        outputs, and computations to support advanced smart contracts on any blockchain..</p>
 
                     <ButtonGroup>
                         <ButtonLink type={ButtonTypes.PRIMARY} url="#">Start building</ButtonLink>

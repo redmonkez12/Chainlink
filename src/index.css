@@ -103,6 +103,14 @@ body {
   padding: 0;
 }
 
+.container {
+  max-width: 1440px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 64px;
+  padding-left: 64px;
+}
+
 .navbar header {
   padding: 0 2rem 0 1rem;
   display: flex;
@@ -193,7 +201,6 @@ header img {
   font-size: 14px;
   margin-right: 0.5px;
   color: #fff;
-  /*line-height: 1.4;*/
 }
 
 .announcement a {
@@ -254,6 +261,10 @@ header img {
 }
 
 .h1-hero-title {
+  max-width: 63ch;
+}
+
+.h1-hero-title > h1 {
   font-size: 32px;
   line-height: 40px;
   margin-top: 0;
@@ -263,7 +274,23 @@ header img {
 }
 
 .hero-subtext {
-  font-size: 16px;
-  line-height: 24px;
   margin-bottom: 48px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+@media screen and (max-width: 767px) {
+  .h1-hero-title {
+    max-width: 45ch;
+  }
+
+  .h1-hero-title > div {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .hero-subtext {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
